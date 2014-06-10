@@ -22,8 +22,7 @@ module Formtastic
       end
 
       def jcrop_partial
-
-        template.render partial: "active_admin_jcrop/jcrop_modal" 
+        template.render partial: "active_admin_jcrop/jcrop_modal", locals: {field: method, object: @object}
       end
 
     end
