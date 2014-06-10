@@ -1,0 +1,18 @@
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: active_admin_jcrop_development
+  pool: 25
+  username: root
+  password: 
+
+
+test:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: active_admin_jcrop_test
+  pool: 25
+  username: root
+  password:   
