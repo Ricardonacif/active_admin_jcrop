@@ -1,50 +1,36 @@
 jQuery ->
+  ActiveAdminJcrop: ->
   $('.crop_modal_open').click ->
-    content = $(this).parent().find('.crop_modal_content')
+    content = $(this).parent().find('.crop_modal_content').clone()
+    image = content.find('img.cropping_image')
+    cropper = {
+      object_class: image.data('object_class'),
+      object_id: image.data('object_id'),
+      field: image.data('field')
+      }
     $(content).appendTo('body').dialog
+      width: content.width() 
+      height: content.height() + 100
       modal: true
+      position: {
+         my: "center",
+         at: "center",
+         of: window
+      }
       buttons:
-        OK: ->
-          callback $(@).serializeObject()
+        'Crop Image': ->
           $(@).dialog('close')
         Cancel: ->
           $(@).dialog('close').remove()
+      image.Jcrop
+        onSelect: update_cropper
+        onChange: update_cropper
+        update: (coords) =>
 
-
-
-ActiveAdmin.crop_modal = (message, inputs, callback)->
-  html = """<form id="dialog_confirm" title="#{message}"><ul>"""
-  for name, type of inputs
-    if /^(datepicker|checkbox|text)$/.test type
-      wrapper = 'input'
-    else if type is 'textarea'
-      wrapper = 'textarea'
-    else if $.isArray type
-      [wrapper, elem, opts, type] = ['select', 'option', type, '']
-    else
-      throw new Error "Unsupported input type: {#{name}: #{type}}"
-
-    klass = if type is 'datepicker' then type else ''
-    html += """<li>
-      <label>#{name.charAt(0).toUpperCase() + name.slice(1)}</label>
-      <#{wrapper} name="#{name}" class="#{klass}" type="#{type}">""" +
-        (if opts then (
-          for v in opts
-            if $.isArray v
-              "<#{elem} value=#{v[1]}>#{v[0]}</#{elem}>"
-            else
-              "<#{elem}>#{v}</#{elem}>"
-        ).join '' else '') +
-      "</#{wrapper}>" +
-    "</li>"
-    [wrapper, elem, opts, type, klass] = [] # unset any temporary variables
-
-  html += "</ul></form>"
-  $(html).appendTo('body').dialog
-    modal: true
-    buttons:
-      OK: ->
-        callback $(@).serializeObject()
-        $(@).dialog('close')
-      Cancel: ->
-        $(@).dialog('close').remove()
+  update_cropper = (coords, cropper) ->
+    console.log(coords)
+    console.log(cropper)
+    cropper.x = coords.x
+    cropper.y = coords.y
+    cropper.w = coords.w
+    cropper.h = coords.h

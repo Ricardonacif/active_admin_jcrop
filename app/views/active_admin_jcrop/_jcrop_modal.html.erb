@@ -1,12 +1,12 @@
-<%= link_to "Crop Image", "#" , class: "button crop_modal_open", data: {
-  object_class: object.class.to_s.downcase, 
-  object_id: object.id, 
-  field: field
-  
-  }
-
-%>
+<%= link_to "Crop Image", "#" , class: "button crop_modal_open" %>
 
 <%= content_tag :div, class: "crop_modal_content" do %>
-  <%= image_tag object.send(field).url %>
+  <center>
+    <%= image_tag object.send(field).url, class: 'cropping_image', data: {
+      object_class: object.class.to_s, 
+      object_id: object.id, 
+      field: field
+      }
+    %>
+  </center>
 <% end %>

@@ -1,3 +1,11 @@
 .crop_modal_content {
   display: none;
+  overflow: scroll;
+  width: 1000px;
+  height: 600px ;
+}
+
+.ui-dialog 
+{
+  position:fixed;
 }

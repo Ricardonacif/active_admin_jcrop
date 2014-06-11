@@ -1,3 +1,3 @@
-= Active Admin Jcrop
+= Active Admin Jcrop Gem
 
 This project is still being development and does not work yet.
