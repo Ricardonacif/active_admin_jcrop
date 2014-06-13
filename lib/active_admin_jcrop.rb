@@ -1,4 +1,5 @@
 require "activeadmin"
+require "active_admin_jcrop/dsl"
 require "formtastic/inputs/file_input"
 require "engine"
 require "railtie"

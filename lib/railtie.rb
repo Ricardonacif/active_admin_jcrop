@@ -1,5 +1,6 @@
 class ActiveAdminJcropRailtie < Rails::Railtie
   initializer "active_admin_jcrop_railtie.configure_rails_initialization" do
+    ActiveAdmin::DSL.send(:include, ActiveAdminJcrop::DSL)
     ActiveAdmin.setup do |config|
       [ 'active_admin_jcrop/crop_modal',
         "active_admin_jcrop/jquery.color",

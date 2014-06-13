@@ -3,9 +3,10 @@
 <%= content_tag :div, class: "crop_modal_content" do %>
   <center>
     <%= image_tag object.send(field).url, class: 'cropping_image', data: {
-      object_class: object.class.to_s, 
+      object_class: object.class.to_s.downcase, 
       object_id: object.id, 
-      field: field
+      field: field,
+      jcropper_url: send("jcropper_admin_#{object.class.to_s.downcase}_path")
       }
     %>
   </center>
