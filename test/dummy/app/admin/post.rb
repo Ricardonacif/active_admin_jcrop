@@ -9,7 +9,7 @@ ActiveAdmin.register Post do
     f.inputs "Details" do
       f.input :name
       # f.input :image, :hint => f.template.image_tag(f.object.image.url(:thumb))
-      f.input :image, jcrop: true
+      f.input :image, as: :jcrop
       f.input :updated_at, :as => :datepicker
       #f.input :image, jcrop: {option: yeah}
 
