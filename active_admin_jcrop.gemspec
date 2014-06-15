@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = ActiveAdminJcrop::VERSION
   s.authors     = ["Ricardo Nacif"]
   s.email       = ["nacif.ricardo@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of ActiveAdminJcrop."
-  s.description = "TODO: Description of ActiveAdminJcrop."
+  s.homepage    = "https://github.com/Ricardonacif/active_admin_jcrop"
+  s.summary     = "Jcrop plugin for ActiveAdmin, enable image cropping solution on image fields"
+  s.description = "Jcrop plugin for ActiveAdmin, enable image cropping solution on image fields"
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
@@ -22,7 +22,6 @@ Gem::Specification.new do |s|
   
   s.add_development_dependency "mysql2"
   s.add_development_dependency "carrierwave"
-  s.add_development_dependency "mini_magick"
   s.add_development_dependency "rmagick"
   s.add_development_dependency "devise"
   s.add_development_dependency "pry"

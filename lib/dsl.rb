@@ -3,7 +3,6 @@ module ActiveAdminJcrop
     
     def jcropable
       member_action :jcropper, method: :put do
-        #binding.pry
         resource.active_admin_crop! params[:image_data]
         
         respond_to do |format|
