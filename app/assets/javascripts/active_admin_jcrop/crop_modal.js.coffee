@@ -7,7 +7,7 @@ window.active_admin_jcrop =
         active_admin_jcrop.cropper =
           object_class: image.data('objectClass')
           object_id: image.data('objectId')
-          field: image.data('field')
+          crop_field: image.data('cropField')
           jcropper_url: image.data('jcropperUrl')
 
         $(content).appendTo('body').dialog
@@ -41,10 +41,10 @@ window.active_admin_jcrop =
             onChange: update_cropper
 
       update_cropper = (coords) ->
-        active_admin_jcrop.cropper.x = coords.x
-        active_admin_jcrop.cropper.y = coords.y
-        active_admin_jcrop.cropper.w = coords.w
-        active_admin_jcrop.cropper.h = coords.h
+        active_admin_jcrop.cropper.crop_x = coords.x
+        active_admin_jcrop.cropper.crop_y = coords.y
+        active_admin_jcrop.cropper.crop_w = coords.w
+        active_admin_jcrop.cropper.crop_h = coords.h
 
 $ ->
   active_admin_jcrop.start()

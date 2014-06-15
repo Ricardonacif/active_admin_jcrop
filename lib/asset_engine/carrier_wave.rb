@@ -34,7 +34,7 @@ module CarrierWave
   end
 end
 
-module RailsAdmin
+module ActiveAdmin
   module Config
     module Fields
       module Types

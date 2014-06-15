@@ -1,5 +1,5 @@
-if defined?(::CarrierWave)
-  require 'active_admin_jcrop/asset_engine/carrier_wave'
-elsif defined?(::Paperclip)
-  require 'active_admin_jcrop/asset_engine/paperclip'
+if Gem::Specification::find_all_by_name('carrierwave').any?
+  require 'asset_engine/carrier_wave'
+elsif Gem::Specification::find_all_by_name('paperclip').any?
+  require 'asset_engine/paperclip'
 end
