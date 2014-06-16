@@ -53,7 +53,7 @@ Done! Now when there's a image attached, visit the edit page of the resource and
 ## Dependencies ##
 
 * MRI 1.9.3 (All above 1.8.6 should work, I only tested on 1.9.3)
-* Rails 3.x
+* Rails 4.x
 * MiniMagick
 
 ## Supported ORM ##
