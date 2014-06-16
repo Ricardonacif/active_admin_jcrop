@@ -19,7 +19,7 @@ module ActiveAdminJcrop
           require 'asset_engine/paperclip'
         end
 
-        CropFields.each {|f| p self.send "#{f}=", params[f] }
+        CropFields.each {|f| self.send "#{f}=", params[f] }
 
         ::ActiveAdminJcrop::AssetEngine.crop!(self, self.crop_field) if self.active_admin_cropping?
       end

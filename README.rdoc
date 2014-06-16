@@ -1,3 +1,0 @@
-= Active Admin Jcrop Gem
-
-This project is still being development and does not work yet. If you want to help it's implementation, feel free to contact me on skype: r.nacif

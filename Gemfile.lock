@@ -28,7 +28,7 @@ GIT
 PATH
   remote: .
   specs:
-    active_admin_jcrop (0.0.1)
+    active_admin_jcrop (0.0.2.alpha)
       mini_magick
       rails (~> 4.1.1)
 
@@ -186,7 +186,6 @@ DEPENDENCIES
   activeadmin (= 1.0.0.pre)!
   carrierwave
   devise
-  mini_magick
   mysql2
   pry
   rmagick
