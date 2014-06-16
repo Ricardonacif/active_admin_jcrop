@@ -46,10 +46,8 @@ window.active_admin_jcrop =
 
             }
           ]
-                        
-          image.Jcrop
-            onSelect: update_cropper
-            onChange: update_cropper
+          options = $.extend {onSelect: update_cropper, onChange: update_cropper }, image.data('jcropOptions')
+          image.Jcrop(options)
 
       update_cropper = (coords) ->
         active_admin_jcrop.cropper.crop_x = coords.x

@@ -23,7 +23,7 @@ ActiveAdmin.register Post do
   
   form do |f|                         
     f.inputs "Details" do
-      f.input :image, as: :jcrop
+      f.input :image, as: :jcropable
     end                      
     f.actions
   end              
@@ -50,6 +50,26 @@ end
 
 Done! Now when there's a image attached, visit the edit page of the resource and click  on the button Crop Image to open the crop modal. You don't need to save this resource, cropping will be done via ajax.
 
+## jCrop Options ##
+
+Simple, just pass the options here:
+```ruby
+# RAILS_ROOT/app/admin/post.rb
+ActiveAdmin.register Post do
+
+  jcropable
+  
+  form do |f|                         
+    f.inputs "Details" do
+      f.input :image, as: :jcropable,  jcrop_options: {aspectRatio: 1}
+    end                      
+    f.actions
+  end              
+  
+end
+
+```
+The default option for ```setSelect``` is ```[0,0,100,100]```. For more available setting options, take a look at [jCrop Manual](http://deepliquid.com/content/Jcrop_Manual.html).
 ## Localization ##
 
 Localize the crop feature by adding these entries:
@@ -64,7 +84,7 @@ Localize the crop feature by adding these entries:
 
 ## Dependencies ##
 
-* MRI 1.9.3 (All above 1.8.6 should work, I only tested on 1.9.3)
+* MRI +1.9.3 (All above 1.8.6 should work)
 * Rails 4.x (didn't tested with 3.2, but it might work)
 * MiniMagick
 
@@ -83,7 +103,6 @@ Localize the crop feature by adding these entries:
 * make sure :active_admin_jcrop load after paperclip/carrierwave load
 * automate :active_admin_jcrop for CarrierWave uploader
 * write some specs
-* add locale support
 
 ## Contributing ##
 

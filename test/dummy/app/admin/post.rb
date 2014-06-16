@@ -4,7 +4,7 @@ ActiveAdmin.register Post do
   
   form do |f|                         
     f.inputs "Details" do
-      f.input :image, as: :jcrop
+      f.input :image, as: :jcropable , jcrop_options: {aspectRatio: 1}
     end                      
     f.actions
   end              
