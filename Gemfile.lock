@@ -28,7 +28,7 @@ GIT
 PATH
   remote: .
   specs:
-    active_admin_jcrop (0.0.2.alpha)
+    active_admin_jcrop (0.0.3.alpha)
       mini_magick
       rails (~> 4.1.1)
 

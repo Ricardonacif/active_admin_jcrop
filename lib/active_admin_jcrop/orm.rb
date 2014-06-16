@@ -13,12 +13,7 @@ module ActiveAdminJcrop
       end
 
       def active_admin_crop!(params)
-        if defined?(::CarrierWave)
-          require 'asset_engine/carrier_wave'
-        elsif defined?(::Paperclip)
-          require 'asset_engine/paperclip'
-        end
-
+        
         CropFields.each {|f| self.send "#{f}=", params[f] }
 
         ::ActiveAdminJcrop::AssetEngine.crop!(self, self.crop_field) if self.active_admin_cropping?
