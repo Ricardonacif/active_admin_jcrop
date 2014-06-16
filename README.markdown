@@ -50,10 +50,22 @@ end
 
 Done! Now when there's a image attached, visit the edit page of the resource and click  on the button Crop Image to open the crop modal. You don't need to save this resource, cropping will be done via ajax.
 
+## Localization ##
+
+Localize the crop feature by adding these entries:
+
+        en:
+          active_admin:
+            crop:
+              open_crop_modal: Crop Image
+              save_cropped_image: Save Cropped Image
+              cancel: Cancel
+
+
 ## Dependencies ##
 
 * MRI 1.9.3 (All above 1.8.6 should work, I only tested on 1.9.3)
-* Rails 4.x
+* Rails 4.x (didn't tested with 3.2, but it might work)
 * MiniMagick
 
 ## Supported ORM ##

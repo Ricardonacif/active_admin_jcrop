@@ -1,0 +1,6 @@
+pt-BR:
+  active_admin:
+    crop:
+      open_crop_modal: Cortar Imagem
+      save_cropped_image: Salvar Imagem Cortada
+      cancel: Cancelar

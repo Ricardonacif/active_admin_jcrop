@@ -1,0 +1,6 @@
+en:
+  active_admin:
+    crop:
+      open_crop_modal: Crop Image
+      save_cropped_image: Save Cropped Image
+      cancel: Cancel
