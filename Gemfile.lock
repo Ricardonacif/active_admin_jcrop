@@ -28,9 +28,9 @@ GIT
 PATH
   remote: .
   specs:
-    active_admin_jcrop (0.0.3)
+    active_admin_jcrop (0.0.4)
       mini_magick
-      rails (~> 4.1.1)
+      rails (> 3.2.0)
 
 GEM
   remote: https://rubygems.org/
@@ -64,11 +64,16 @@ GEM
     arbre (1.0.1)
       activesupport (>= 3.0.0)
     arel (5.0.1.20140414130214)
-    bcrypt (3.1.7)
     bourbon (4.0.2)
       sass (~> 3.3)
       thor
     builder (3.2.2)
+    capybara (2.3.0)
+      mime-types (>= 1.16)
+      nokogiri (>= 1.3.3)
+      rack (>= 1.0.0)
+      rack-test (>= 0.5.4)
+      xpath (~> 2.0)
     carrierwave (0.10.0)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
@@ -82,14 +87,15 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.7.0)
-    devise (3.2.4)
-      bcrypt (~> 3.0)
-      orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
-      thread_safe (~> 0.1)
-      warden (~> 1.2.3)
+    database_cleaner (1.3.0)
+    diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.2.0)
+    factory_girl (2.6.4)
+      activesupport (>= 2.3.9)
+    factory_girl_rails (1.7.0)
+      factory_girl (~> 2.6.0)
+      railties (>= 3.0.0)
     formtastic (2.3.0.rc3)
       actionpack (>= 3.0)
     has_scope (0.6.0.rc)
@@ -116,10 +122,12 @@ GEM
     mime-types (1.25.1)
     mini_magick (3.7.0)
       subexec (~> 0.2.1)
+    mini_portile (0.6.0)
     minitest (5.3.4)
     multi_json (1.10.1)
     mysql2 (0.3.16)
-    orm_adapter (0.5.0)
+    nokogiri (1.6.2.1)
+      mini_portile (= 0.6.0)
     polyamorous (1.0.0)
       activerecord (>= 3.0)
     polyglot (0.3.5)
@@ -155,6 +163,21 @@ GEM
     responders (1.1.0)
       railties (>= 3.2, < 5)
     rmagick (2.13.2)
+    rspec-collection_matchers (1.0.0)
+      rspec-expectations (>= 2.99.0.beta1)
+    rspec-core (2.99.0)
+    rspec-expectations (2.99.0)
+      diff-lcs (>= 1.1.3, < 2.0)
+    rspec-mocks (2.99.1)
+    rspec-rails (2.99.0)
+      actionpack (>= 3.0)
+      activemodel (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-collection_matchers
+      rspec-core (~> 2.99.0)
+      rspec-expectations (~> 2.99.0)
+      rspec-mocks (~> 2.99.0)
     sass (3.3.8)
     slop (3.5.0)
     sprockets (2.12.1)
@@ -175,8 +198,8 @@ GEM
       polyglot (>= 0.3.1)
     tzinfo (1.2.1)
       thread_safe (~> 0.1)
-    warden (1.2.3)
-      rack (>= 1.0)
+    xpath (2.0.0)
+      nokogiri (~> 1.3)
 
 PLATFORMS
   ruby
@@ -184,9 +207,12 @@ PLATFORMS
 DEPENDENCIES
   active_admin_jcrop!
   activeadmin (= 1.0.0.pre)!
+  capybara
   carrierwave
-  devise
+  database_cleaner
+  factory_girl_rails (~> 1.0)
   mysql2
   pry
   rmagick
+  rspec-rails
   sass-rails!

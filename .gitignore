@@ -8,3 +8,5 @@ test/dummy/tmp/
 test/dummy/public/uploads/
 test/dummy/.sass-cache
 console
+spec/dummy/public/uploads/*
+spec/dummy/tmp/*

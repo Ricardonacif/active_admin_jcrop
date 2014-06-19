@@ -102,7 +102,6 @@ Localize the crop feature by adding these entries:
 
 * make sure :active_admin_jcrop load after paperclip/carrierwave load
 * automate :active_admin_jcrop for CarrierWave uploader
-* write some specs
 
 ## Contributing ##
 
