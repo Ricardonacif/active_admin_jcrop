@@ -40370,3 +40370,1947 @@ Migrating to DropAdminUserTable (20140619201236)
   [1m[35mSQL (65.7ms)[0m  INSERT INTO `schema_migrations` (`version`) VALUES ('20140619201236')
   [1m[36m (24.7ms)[0m  [1mCOMMIT[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT `schema_migrations`.* FROM `schema_migrations`
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-06-19 17:39:35 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::DashboardController#index as HTML
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/page/index.html.arb (602.2ms)
+Completed 200 OK in 614ms (Views: 610.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-19 17:39:35 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-19 17:39:35 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-19 17:39:35 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:35 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-19 17:39:35 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:35 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:35 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:35 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:35 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:35 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+Processing by Admin::DashboardController#index as HTML
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/page/index.html.arb (17.2ms)
+Completed 200 OK in 19ms (Views: 18.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-19 17:39:36 -0300
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+Processing by Admin::PostsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT  `posts`.* FROM `posts`   ORDER BY `posts`.`id` desc LIMIT 30 OFFSET 0
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/resource/index.html.arb (81.9ms)
+Completed 200 OK in 92ms (Views: 84.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2014-06-19 17:39:38 -0300
+
+
+Started GET "/admin/posts/1/edit" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 1 LIMIT 1
+  Rendered /Users/ricardonacif/rails_projects/active_admin_jcrop/app/views/active_admin_jcrop/_jcrop_modal.html.erb (2.3ms)
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/resource/edit.html.arb (50.4ms)
+Completed 200 OK in 55ms (Views: 53.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-19 17:39:40 -0300
+
+
+Started GET "/assets/active_admin_jcrop/Jcrop.gif" for 127.0.0.1 at 2014-06-19 17:39:42 -0300
+
+
+Started PUT "/admin/posts/1/jcropper" for 127.0.0.1 at 2014-06-19 17:39:45 -0300
+Processing by Admin::PostsController#jcropper as */*
+  Parameters: {"image_data"=>{"object_class"=>"post", "object_id"=>"1", "crop_field"=>"image", "jcropper_url"=>"/admin/posts/1/jcropper", "crop_x"=>"108", "crop_y"=>"77", "crop_w"=>"100", "crop_h"=>"100"}, "id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 505ms (Views: 0.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-06-19 17:46:24 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::DashboardController#index as HTML
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/page/index.html.arb (1504.5ms)
+Completed 200 OK in 1545ms (Views: 1535.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:26 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:27 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:27 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:27 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:27 -0300
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2014-06-19 17:46:28 -0300
+Processing by Admin::PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT  `posts`.* FROM `posts`   ORDER BY `posts`.`id` desc LIMIT 30 OFFSET 0
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/resource/index.html.arb (190.0ms)
+Completed 200 OK in 217ms (Views: 197.5ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2014-06-19 17:46:29 -0300
+
+
+Started GET "/admin/posts/1/edit" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 1 LIMIT 1
+  Rendered /Users/ricardonacif/rails_projects/active_admin_jcrop/app/views/active_admin_jcrop/_jcrop_modal.html.erb (4.3ms)
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/resource/edit.html.arb (108.0ms)
+Completed 200 OK in 118ms (Views: 115.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:31 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:32 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:32 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:32 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:32 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:32 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-19 17:46:32 -0300
+
+
+Started GET "/assets/active_admin_jcrop/Jcrop.gif" for 127.0.0.1 at 2014-06-19 17:46:33 -0300
+
+
+Started PUT "/admin/posts/1/jcropper" for 127.0.0.1 at 2014-06-19 17:46:49 -0300
+Processing by Admin::PostsController#jcropper as */*
+  Parameters: {"image_data"=>{"object_class"=>"post", "object_id"=>"1", "crop_field"=>"image", "jcropper_url"=>"/admin/posts/1/jcropper", "crop_x"=>"177", "crop_y"=>"0", "crop_w"=>"100", "crop_h"=>"100"}, "id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 1 LIMIT 1[0m
+Completed 200 OK in 406ms (Views: 0.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-06-19 17:52:32 -0300
+Processing by Admin::DashboardController#index as HTML
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/page/index.html.arb (46.7ms)
+Completed 200 OK in 53ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-19 17:52:32 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:32 -0300
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-19 17:52:32 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-19 17:52:32 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:32 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-19 17:52:32 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:32 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:32 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:32 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:32 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:32 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:32 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:32 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:32 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:32 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:33 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:33 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:33 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:33 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:33 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:33 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:33 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:33 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:33 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:33 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:33 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:33 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:33 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:33 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:33 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:33 -0300
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-06-19 17:52:46 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::DashboardController#index as HTML
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/page/index.html.arb (1487.5ms)
+Completed 200 OK in 1515ms (Views: 1508.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-19 17:52:48 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-19 17:52:48 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-19 17:52:48 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:48 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-19 17:52:48 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:48 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:48 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:48 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:48 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:48 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:48 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:48 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:48 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:48 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:49 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:49 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:49 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:49 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:49 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:49 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:49 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:49 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:49 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:49 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:49 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:49 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:49 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:49 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:49 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:49 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:49 -0300
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2014-06-19 17:52:50 -0300
+Processing by Admin::PostsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT  `posts`.* FROM `posts`   ORDER BY `posts`.`id` desc LIMIT 30 OFFSET 0
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/resource/index.html.arb (199.3ms)
+Completed 200 OK in 226ms (Views: 206.7ms | ActiveRecord: 8.1ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2014-06-19 17:52:51 -0300
+
+
+Started GET "/admin/posts/1/edit" for 127.0.0.1 at 2014-06-19 17:52:53 -0300
+Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 1 LIMIT 1
+  Rendered /Users/ricardonacif/rails_projects/active_admin_jcrop/app/views/active_admin_jcrop/_jcrop_modal.html.erb (4.2ms)
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/resource/edit.html.arb (111.3ms)
+Completed 200 OK in 122ms (Views: 118.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-19 17:52:54 -0300
+
+
+Started GET "/admin/posts/1/edit" for 127.0.0.1 at 2014-06-19 18:42:32 -0300
+Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 1 LIMIT 1
+  Rendered /Users/ricardonacif/rails_projects/active_admin_jcrop/app/views/active_admin_jcrop/_jcrop_modal.html.erb (1.9ms)
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/resource/edit.html.arb (110.2ms)
+Completed 200 OK in 239ms (Views: 189.1ms | ActiveRecord: 47.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-19 18:42:34 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-19 18:42:34 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-19 18:42:34 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-19 18:42:34 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:34 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:34 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:34 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:34 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:34 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-19 18:42:35 -0300
+
+
+Started GET "/admin/posts/1/edit" for 127.0.0.1 at 2014-06-19 18:45:49 -0300
+Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 1 LIMIT 1
+  Rendered /Users/ricardonacif/rails_projects/active_admin_jcrop/app/views/active_admin_jcrop/_jcrop_modal.html.erb (1.5ms)
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/resource/edit.html.arb (30.2ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:50 -0300
+
+
+Started GET "/admin/dashboard" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+Processing by Admin::DashboardController#index as HTML
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/page/index.html.arb (18.8ms)
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-19 18:45:52 -0300
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+Processing by Admin::PostsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM `posts`[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  `posts`.* FROM `posts`   ORDER BY `posts`.`id` desc LIMIT 30 OFFSET 0[0m
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/resource/index.html.arb (71.6ms)
+Completed 200 OK in 109ms (Views: 107.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-19 18:53:03 -0300
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+Processing by Admin::PostsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mPost Load (0.2ms)[0m  SELECT  `posts`.* FROM `posts`   ORDER BY `posts`.`id` desc LIMIT 30 OFFSET 0
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/resource/index.html.arb (48.8ms)
+Completed 200 OK in 52ms (Views: 50.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-19 18:53:05 -0300
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-06-20 13:39:44 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (40.1ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by Admin::DashboardController#index as HTML
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/page/index.html.arb (669.6ms)
+Completed 200 OK in 682ms (Views: 678.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-20 13:39:45 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-20 13:39:45 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-20 13:39:45 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-20 13:39:45 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:45 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:45 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:45 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:45 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:45 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:45 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:45 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:45 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:45 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:46 -0300
+
+
+Started GET "/admin/posts" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+Processing by Admin::PostsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `posts`
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT COUNT(count_column) FROM (SELECT  1 AS count_column FROM `posts`  LIMIT 30 OFFSET 0) subquery_for_count[0m
+  [1m[35mPost Load (0.3ms)[0m  SELECT  `posts`.* FROM `posts`   ORDER BY `posts`.`id` desc LIMIT 30 OFFSET 0
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/resource/index.html.arb (96.0ms)
+Completed 200 OK in 146ms (Views: 99.5ms | ActiveRecord: 39.2ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin/orderable.png" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/assets/active_admin/datepicker/datepicker-input-icon.png" for 127.0.0.1 at 2014-06-20 13:39:48 -0300
+
+
+Started GET "/admin/posts/1/edit" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+Processing by Admin::PostsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 1 LIMIT 1[0m
+  [1m[35mPost Load (0.1ms)[0m  SELECT  `posts`.* FROM `posts`  WHERE `posts`.`id` = 1 LIMIT 1
+  Rendered /Users/ricardonacif/rails_projects/active_admin_jcrop/app/views/active_admin_jcrop/_jcrop_modal.html.erb (2.3ms)
+  Rendered /Users/ricardonacif/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/bundler/gems/active_admin-4f445b51c22b/app/views/active_admin/resource/edit.html.arb (53.0ms)
+Completed 200 OK in 58ms (Views: 56.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/active_admin.css?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin/print.css?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/jquery.ui.core.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.css?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.css?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/jquery.ui.widget.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/jquery.ui.datepicker.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/jquery.ui.button.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/jquery.ui.mouse.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/jquery.ui.draggable.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/jquery.ui.position.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/jquery.ui.resizable.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/jquery.ui.dialog.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/jquery.ui.sortable.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin/base.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin/lib/batch_actions.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin/lib/checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin/lib/dropdown-menu.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin/lib/has_many.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin/lib/modal_dialog.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin/lib/popover.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin/lib/table-checkbox-toggler.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery-ui.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin/ext/jquery.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin/application.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin_jcrop/crop_modal.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.color.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300
+
+
+Started GET "/assets/active_admin_jcrop/jquery.Jcrop.min.js?body=1" for 127.0.0.1 at 2014-06-20 13:39:50 -0300

@@ -1,7 +1,25 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../dummy/config/environment", __FILE__)
+require 'carrierwave'
+require 'carrierwave/orm/activerecord'
+
+require_relative 'dummy/app/models/post'
+
 require 'rspec/rails'
+require 'database_cleaner'
+require 'factory_girl'
+require 'factories'
+require 'formtastic/inputs/jcrop_input'
+
+require 'activeadmin'
+require 'pry'
+
+#Workaround for Capybara/RSPEC issues
+require_relative 'dummy/app/admin/post'
+require_relative 'dummy/app/admin/dashboard'
+require_relative 'dummy/config/routes'
+
 
 # Requires supporting ruby files with custom matchers and macros, etc, in
 # spec/support/ and its subdirectories. Files matching `spec/**/*_spec.rb` are
@@ -17,6 +35,7 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
+  config.include FactoryGirl::Syntax::Methods
   # ## Mock Framework
   #
   # If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:
@@ -70,3 +89,5 @@ RSpec.configure do |config|
   # https://relishapp.com/rspec/rspec-rails/v/3-0/docs
   config.infer_spec_type_from_file_location!
 end
+
+
