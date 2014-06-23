@@ -15,6 +15,8 @@ require 'formtastic/inputs/jcrop_input'
 require 'activeadmin'
 require 'pry'
 
+include ActionDispatch::TestProcess
+
 #Workaround for Capybara/RSPEC issues
 require_relative 'dummy/app/admin/post'
 require_relative 'dummy/app/admin/dashboard'
@@ -50,7 +52,7 @@ RSpec.configure do |config|
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
   # examples within a transaction, remove the following line or assign false
   # instead of true.
-  # config.use_transactional_fixtures = true
+  #config.use_transactional_fixtures = false
 
   # If true, the base class of anonymous controllers will be inferred
   # automatically. This will be the default behavior in future versions of
@@ -61,6 +63,12 @@ RSpec.configure do |config|
   # order dependency and want to debug it, you can fix the order by providing
   # the seed, which is printed after each run.
   #     --seed 1234
+  config.after(:each) do
+    if Rails.env.test? || Rails.env.cucumber?
+      FileUtils.rm_rf(Dir["#{Rails.root}/spec/support/uploads"])
+    end 
+  end
+
   config.order = "random"
 
   # RSpec Rails can automatically mix in different behaviours to your tests
@@ -74,10 +82,21 @@ RSpec.configure do |config|
   #       # ...
   #     end
   #
-  config.before(:suite) do
-    DatabaseCleaner.strategy = :transaction
-    DatabaseCleaner.clean_with(:truncation)
+  
+
+  config.use_transactional_fixtures = false
+  config.before :each do
+    DatabaseCleaner.start
   end
+  config.after :each do
+    DatabaseCleaner.clean
+  end
+
+
+  # config.before(:suite) do
+  #   DatabaseCleaner.strategy = :transaction
+  #   DatabaseCleaner.clean_with(:truncation)
+  # end
 
   config.around(:each) do |example|
     DatabaseCleaner.cleaning do

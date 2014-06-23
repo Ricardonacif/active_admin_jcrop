@@ -1,3 +1,9 @@
+## v0.0.4
+
+* added spec configuration
+* fixed vendor on asset pipeline
+
+
 ## v0.0.3
 
 * added locale support

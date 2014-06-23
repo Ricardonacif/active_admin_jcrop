@@ -3,10 +3,11 @@ log/*.log
 pkg/
 test/dummy/db/*.sqlite3
 test/dummy/db/*.sqlite3-journal
-test/dummy/log/*.log
-test/dummy/tmp/
-test/dummy/public/uploads/
+spec/dummy/log/*.log
+spec/dummy/tmp/
+spec/dummy/public/uploads/
 test/dummy/.sass-cache
 console
 spec/dummy/public/uploads/*
 spec/dummy/tmp/*
+spec/support/uploads/*
