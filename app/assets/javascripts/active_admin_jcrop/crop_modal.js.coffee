@@ -33,8 +33,6 @@ window.active_admin_jcrop =
                   url: cropper.jcropper_url
                   data:
                     image_data: cropper
-                  success: ->
-                    console.log('nois')
                   error: ->
                     alert('There was an error while cropping the image')
                   $(@).dialog('close')                
