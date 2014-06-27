@@ -9,15 +9,15 @@ if Rails.env.test? || Rails.env.cucumber?
     next if klass.anonymous?
     klass.class_eval do
       def cache_dir
-        "#{Rails.root}/spec/support/uploads/tmp"
+        "#{Rails.root}/public/tmp"
       end
 
       def store_dir
-        "#{Rails.root}/spec/support/uploads/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
+        "#{Rails.root}/public/#{model.class.to_s.underscore}/#{mounted_as}/#{model.id}"
       end
     end
   end
   CarrierWave.configure do |config|
-      config.root = "#{Rails.root}/spec/support/uploads/" 
+      config.root = "#{Rails.root}/public/" 
    end
 end

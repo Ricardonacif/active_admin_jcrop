@@ -65,7 +65,7 @@ RSpec.configure do |config|
   #     --seed 1234
   config.after(:each) do
     if Rails.env.test? || Rails.env.cucumber?
-      FileUtils.rm_rf(Dir["#{Rails.root}/spec/support/uploads"])
+      FileUtils.rm_rf(Dir["#{Rails.root}/spec/dummy/public/post"])
     end 
   end
 
