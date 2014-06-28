@@ -230,6 +230,7 @@ DEPENDENCIES
   mysql2
   phashion
   pry
+  rake
   rmagick
   rspec-rails (~> 3.0.1)
   sass-rails!

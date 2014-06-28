@@ -34,5 +34,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'factory_girl_rails', '~> 1.0'
   s.add_development_dependency "pry"
   s.add_development_dependency "phashion"
+  s.add_development_dependency "rake"
   
 end
