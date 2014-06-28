@@ -5,8 +5,8 @@ before_script:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
   - sleep 3 # give xvfb some time to start
+  - mysql -e 'create database active_admin_jcrop_test'  
 script:
-  - RAILS_ENV=test bundle exec rake db:create --trace
   - RAILS_ENV=test bundle exec rake db:migrate --trace
-  - bundle exec rake db:test:prepare
   - bundle exec rspec spec
+bundler_args: --binstubs=./bundler_stubs
