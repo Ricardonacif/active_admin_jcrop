@@ -1,10 +1,6 @@
 # Active Admin Jcrop
 
-[![Build Status](https://travis-ci.org/Ricardonacif/active_admin_jcrop.svg?branch=master)](https://travis-ci.org/Ricardonacif/active_admin_jcrop)
-
-[![Code Climate](https://codeclimate.com/github/Ricardonacif/active_admin_jcrop.png)](https://codeclimate.com/github/Ricardonacif/active_admin_jcrop)
-
-[![Gem Version](https://badge.fury.io/rb/active_admin_jcrop.svg)](http://badge.fury.io/rb/active_admin_jcrop)
+[![Build Status](https://travis-ci.org/Ricardonacif/active_admin_jcrop.svg?branch=master)](https://travis-ci.org/Ricardonacif/active_admin_jcrop) [![Code Climate](https://codeclimate.com/github/Ricardonacif/active_admin_jcrop.png)](https://codeclimate.com/github/Ricardonacif/active_admin_jcrop) [![Gem Version](https://badge.fury.io/rb/active_admin_jcrop.svg)](http://badge.fury.io/rb/active_admin_jcrop)
 
 
 
