@@ -1,5 +1,12 @@
 ## v0.0.4
 
+* added specs to dummy app
+* refactored some code
+* added Travis CI
+
+
+## v0.0.4
+
 * added spec configuration
 * fixed vendor on asset pipeline
 
