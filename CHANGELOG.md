@@ -1,4 +1,4 @@
-## v0.0.4
+## v0.0.5
 
 * added specs to dummy app
 * refactored some code
