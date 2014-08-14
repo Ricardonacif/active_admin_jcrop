@@ -6,7 +6,7 @@
       object_class: object.class.to_s.underscore, 
       object_id: object.id, 
       crop_field: field,
-      jcropper_url: send("jcropper_admin_#{object.class.to_s.underscore}_path", object),
+      jcropper_url: send("jcropper_#{ActiveAdmin.application.default_namespace.to_s}_#{object.class.to_s.underscore}_path", object),
       translate_save_cropped_image: I18n.t("active_admin.crop.save_cropped_image").titleize,
       translate_cancel: I18n.t("active_admin.crop.cancel").titleize,
       jcrop_options: jcrop_options.to_json
