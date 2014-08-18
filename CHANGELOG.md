@@ -1,3 +1,7 @@
+## v0.0.6
+
+* added support to Active Admin custom namespace
+
 ## v0.0.5
 
 * added specs to dummy app
