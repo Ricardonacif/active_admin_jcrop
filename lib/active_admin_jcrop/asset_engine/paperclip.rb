@@ -18,9 +18,12 @@ module Paperclip
     def has_attached_file(*args)
       super
 
-      self.attachment_definitions.each do |name, options|
-        options[:processors] ||= []
-        options[:processors] << :active_admin_jcropper
+      attribute_name = args[0]
+      definition = attachment_definitions[attribute_name]
+      definition[:processors] ||= []
+
+      unless definition[:processors].include?(:active_admin_jcropper)
+        definition[:processors] << :active_admin_jcropper
       end
     end
   end
