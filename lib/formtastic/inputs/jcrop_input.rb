@@ -23,7 +23,7 @@ module Formtastic
 
       def jcrop_options
         options[:jcrop_options] ||= {}
-        options[:jcrop_options].assert_valid_keys(:aspectRatio, :minSize, :maxSize, :setSelect, :bgColor, :bgOpacity)
+        options[:jcrop_options].assert_valid_keys(:aspectRatio, :minSize, :maxSize, :setSelect, :bgColor, :bgOpacity, :boxWidth)
         options[:jcrop_options].reverse_merge!(setSelect: [0,0,100,100])
       end
 

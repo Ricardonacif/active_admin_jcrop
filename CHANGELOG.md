@@ -1,3 +1,8 @@
+## v0.0.7
+
+* adding custom fields only once per model
+* add boxWidth option to jcrop_input
+
 ## v0.0.6
 
 * added support to Active Admin custom namespace
