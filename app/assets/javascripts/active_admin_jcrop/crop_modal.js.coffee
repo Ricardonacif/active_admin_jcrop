@@ -44,14 +44,40 @@ window.active_admin_jcrop =
 
             }
           ]
-          options = $.extend {onSelect: update_cropper, onChange: update_cropper }, image.data('jcropOptions')
-          image.Jcrop(options)
+        options = $.extend {}, image.data('jcropOptions')
+        options.onSelect = (coords) ->
+          update_cropper(coords)
+          if fn = image.data('jcropOptions').onSelect
+            if typeof fn is 'string'
+              window[fn] coords
+            else if typeof fn is 'function'
+              fn coords
+          return
+        options.onChange = (coords) ->
+          update_cropper(coords)
+          if fn = image.data('jcropOptions').onChange
+            if typeof fn is 'string'
+              window[fn] coords
+            else if typeof fn is 'function'
+              fn coords
+          return
+        options.onRelease = ->
+          if fn = image.data('jcropOptions').onRelease
+            if typeof fn is 'string'
+              window[fn] coords
+            else if typeof fn is 'function'
+              fn coords
+          return
+        image.Jcrop(options)
+        return
 
       update_cropper = (coords) ->
         active_admin_jcrop.cropper.crop_x = coords.x
         active_admin_jcrop.cropper.crop_y = coords.y
         active_admin_jcrop.cropper.crop_w = coords.w
         active_admin_jcrop.cropper.crop_h = coords.h
+        return
+      return
 
 $ ->
   active_admin_jcrop.start()

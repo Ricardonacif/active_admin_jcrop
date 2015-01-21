@@ -12,6 +12,9 @@ module Formtastic
         bgOpacity
         boxWidth
         boxHeight
+        onSelect
+        onChange
+        onRelease
       )
 
       def to_html
