@@ -47,6 +47,8 @@ window.active_admin_jcrop =
         options = $.extend {}, image.data('jcropOptions')
         options.onSelect = (coords) ->
           update_cropper(coords)
+          if image.data('jcropOptions').showDimensions
+            content.find('.crop_modal_dimensions').first().text("#{coords.w}x#{coords.h}")
           if fn = image.data('jcropOptions').onSelect
             if typeof fn is 'string'
               window[fn] coords
@@ -55,6 +57,8 @@ window.active_admin_jcrop =
           return
         options.onChange = (coords) ->
           update_cropper(coords)
+          if image.data('jcropOptions').showDimensions
+            content.find('.crop_modal_dimensions').first().text("#{coords.w}x#{coords.h}")
           if fn = image.data('jcropOptions').onChange
             if typeof fn is 'string'
               window[fn] coords

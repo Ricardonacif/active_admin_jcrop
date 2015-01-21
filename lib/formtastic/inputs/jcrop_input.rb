@@ -15,6 +15,7 @@ module Formtastic
         onSelect
         onChange
         onRelease
+        showDimensions
       )
 
       def to_html
