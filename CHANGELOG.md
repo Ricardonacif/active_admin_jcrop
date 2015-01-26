@@ -1,3 +1,8 @@
+## v0.0.8
+
+* added support to jcrop events
+
+
 ## v0.0.7
 
 * adding custom fields only once per model
