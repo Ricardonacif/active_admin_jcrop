@@ -65,7 +65,7 @@ ActiveAdmin.register Post do
   
   form do |f|                         
     f.inputs "Details" do
-      f.input :image, as: :jcropable,  jcrop_options: {aspectRatio: 1}
+      f.input :image, as: :jcropable,  jcrop_options: {aspectRatio: 1, showDimensions: true} # showDimensions will display the current crop dimensions in the upper left hand corner
     end                      
     f.actions
   end              
