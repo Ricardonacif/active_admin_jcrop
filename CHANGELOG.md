@@ -1,3 +1,8 @@
+## v0.0.9
+
+* added show current dimension feature
+
+
 ## v0.0.8
 
 * added support to jcrop events
