@@ -2,6 +2,7 @@
 
 <%= content_tag :div, class: "crop_modal_content" do %>
   <center>
+    <div class="crop_modal_dimensions"></div>
     <%= image_tag object.send(field).url, class: 'cropping_image', data: {
       object_class: object.class.to_s.underscore, 
       object_id: object.id, 
