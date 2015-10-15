@@ -15,8 +15,11 @@ module ActiveAdminJcrop
         ].each do |css|
           config.register_stylesheet css
         end
-        
+
       end
+    end
+    initializer "active_admin_jcrop_railtie.view_helpers" do
+      ActionView::Base.send :include, ViewHelpers
     end
   end
 
