@@ -6,3 +6,4 @@ require "formtastic/inputs/jcrop_input"
 require "active_admin_jcrop/engine"
 require "active_admin_jcrop/railtie"
 require 'active_admin_jcrop/image_helper'
+require 'active_admin_jcrop/view_helpers'
