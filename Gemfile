@@ -11,7 +11,7 @@ gemspec
 # your gem to rubygems.org.
 
 group :development do
-  gem 'activeadmin', '1.0.0.pre', github: 'gregbell/active_admin' 
+  gem 'activeadmin', github: 'gregbell/active_admin' 
   gem 'sass-rails', github: 'rails/sass-rails'
 end
 
