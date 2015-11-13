@@ -39,7 +39,7 @@ end
 If you use Paperclip, you might need to set an empty original style hash so the processor can work correctly (this is needed in the latest versions of Paperclip, not really sure why:
 
 ```ruby
-has_attached_file :attachment, :styles     => {:original => {}}
+has_attached_file :attachment, :styles => {:original => {}}
                     
 ```
 If CarrierWave is used, please invoke :active_admin_crop in your uploader, and include both modules:
