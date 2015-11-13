@@ -1,3 +1,8 @@
+## v0.0.10
+
+* Updated README to include the Paperclip fix for the processor
+* 4a10b33320 (Add ActiveAdmin namespace to jcropper_url only if not blank)
+
 ## v0.0.9
 
 * added show current dimension feature
