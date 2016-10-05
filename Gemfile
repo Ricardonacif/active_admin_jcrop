@@ -12,8 +12,7 @@ gemspec
 
 group :development, :test do
   gem 'activeadmin', github: 'gregbell/active_admin' 
-  gem 'sass-rails', github: 'rails/sass-rails'
-  gem 'carrierwave'
+  gem 'sass-rails', '~> 5.0'
 end
 
 # To use debugger
