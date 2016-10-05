@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
   # Dummy
   s.add_development_dependency "mysql2"
   s.add_development_dependency "carrierwave"
+  s.add_development_dependency "dragonfly"
   s.add_development_dependency "rmagick"
   
   # Tests
