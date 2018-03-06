@@ -38,7 +38,7 @@ window.active_admin_jcrop =
                   data:
                     image_data: cropper
                   success: ->
-                    location.reload();
+                    location.reload()
                     submitButton.value = previousValue
                     submitButton.disabled = false
                   error: ->
